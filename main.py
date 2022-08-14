@@ -129,7 +129,6 @@ def download_youtube_mp3(url_yt):
     messagebox.showinfo(message = "Download finished!", title = "Info")
 
 
-
 def main():
     app = tk.Tk()
     
