@@ -83,7 +83,7 @@ class YoutubeWindow:
         
         app.mainloop()
         
-
+#Get directory to save files
 def get_dir():
     directory = filedialog.askdirectory()
     
@@ -92,7 +92,7 @@ def get_dir():
         
     return directory
 
-
+#Download a Youtube Playlist in .mp3
 def download_playlist_mp3(url_pl):
     directory = get_dir()
     
@@ -111,7 +111,7 @@ def download_playlist_mp3(url_pl):
     
     messagebox.showinfo(message = "Download finished!", title = "Info")
 
-
+#Download Youtube videos in .mp3
 def download_youtube_mp3(url_yt):
     directory = get_dir()
     
@@ -128,7 +128,7 @@ def download_youtube_mp3(url_yt):
 
     messagebox.showinfo(message = "Download finished!", title = "Info")
 
-
+#Run main window
 def main():
     app = tk.Tk()
     
